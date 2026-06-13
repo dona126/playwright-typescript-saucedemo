@@ -179,4 +179,4 @@ npx playwright show-report
 |---|---|---|
 | Chromium | ✅ | ✅ |
 | Firefox | ✅ | ✅ |
-| WebKit | ✅ | ✅ |
+<!-- | WebKit | ✅ | ✅ | -->
