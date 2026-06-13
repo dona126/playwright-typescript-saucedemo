@@ -1,3 +1,5 @@
+// TC count = 7
+
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 
@@ -7,7 +9,7 @@ const PASSWORD = process.env.SAUCE_PASSWORD!;
 
 
 test.beforeEach(async ({ page }) => {
-  const loginPage = new LoginPage(page); //That loginPage exists only inside beforeEach.
+  const loginPage = new LoginPage(page); //This loginPage exists only inside beforeEach.
 //The tests cannot access it, so each test creates its own:
   await loginPage.goto();
 });
