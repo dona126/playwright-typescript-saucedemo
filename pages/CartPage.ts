@@ -29,10 +29,10 @@ export class CartPage {
   }
 
   async removeItem(): Promise<void> {
-    await this.removeButton.first().click();
+    await await this.removeButton.first().click();
   }
 
   async proceedToCheckout(): Promise<void> {
-    await this.checkoutButton.click();
+    await await this.checkoutButton.click();
   }
 }

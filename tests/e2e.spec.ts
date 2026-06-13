@@ -44,7 +44,7 @@ test.describe('E2E Tests', () => {
     expect(await inventoryPage.getCartCount()).toBe('2');
     await cartPage.goto();
     await cartPage.proceedToCheckout();
-    await checkout.fillDetails('Dona', 'Maria', '600001');
+    await checkout.fillDetails('Diya', 'Merin', '600001');
     await checkout.continueCheckout();
     await expect(page.locator('[data-test="inventory-item"]')).toHaveCount(2);
     await checkout.finishCheckout();

@@ -20,10 +20,10 @@ export class InventoryPage {
   }
 
   async getCartCount(): Promise<string | null> {
-    return this.cartBadge.textContent();
+    return await this.cartBadge.textContent();
   }
 
   async getProductCount(): Promise<number> {
-    return this.productList.count();
+    return await this.productList.count();
   }
 }

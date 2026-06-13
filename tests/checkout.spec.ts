@@ -6,7 +6,7 @@ test.describe('Checkout Tests', () => {
 
   /** TC_001: Complete checkout with valid details */
   test('complete checkout', async ({ checkoutPage }) => {
-    await checkoutPage.fillDetails('Dona', 'Maria', '600001');
+    await checkoutPage.fillDetails('Don', 'Ken', '600001');
     await checkoutPage.continueCheckout();
     await checkoutPage.finishCheckout();
     expect(await checkoutPage.getConfirmationText()).toContain('Thank you for your order');

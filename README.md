@@ -57,7 +57,7 @@ playwright-typescript-saucedemo/
 | `add single item to cart` | Cart badge shows 1 after adding one item |
 | `add multiple items to cart` | Cart badge shows 2 after adding two items |
 | `remove item from cart` | Item removed from cart after clicking remove |
-| `cart badge count updates` | Cart badge disappears after removing only item |
+| `cart badge count updates` | Cart badge disappears after removing the only item from the inventory page|
 | `cart persists after navigation` | Cart item persists after navigating away |
 
 ### Checkout

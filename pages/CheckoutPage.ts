@@ -36,10 +36,10 @@ export class CheckoutPage {
   }
 
   async getErrorMessage(): Promise<string | null> {
-    return this.errorMessage.textContent();
+    return await this.errorMessage.textContent();
   }
 
   async getConfirmationText(): Promise<string | null> {
-    return this.confirmationHeader.textContent();
+    return await this.confirmationHeader.textContent();
   }
 }
